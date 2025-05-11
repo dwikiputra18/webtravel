@@ -26,10 +26,10 @@ export default function Footer() {
         <div>
           <h4 className="font-semibold text-base mb-2">Kontak Kami</h4>
           <p className="mb-1">
-            Jl. Padang Galak No.88, Kesiman, Kec. Denpasar Tim., Kota Denpasar, Bali 80237
+            Alamat Kami 
           </p>
-          <p className="mb-1">📞 081 353 079 529</p>
-          <p>📧 hello@tripkuy.co.id</p>
+          <p className="mb-1">📞 08x xxxx xxxx</p>
+          <p>📧 E-mail kami</p>
         </div>
 
         {/* Kanan - Galeri */}
