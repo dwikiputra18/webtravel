@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Link from "next/link";
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -24,16 +25,23 @@ export default function Header() {
         <h1 className={`text-2xl font-bold ${scrolled ? "text-black" : "text-black"}`}>
           TravelNesia
         </h1>
-        <nav>
-         <a
-  href="#paket"
-  className={`hover:underline text-sm ${
-    scrolled ? "text-blue-600" : "text-black"
-  }`}
->
-  Paket
-</a>
-        </nav>
+         <ul className="hidden md:flex gap-x-6 text-black">
+              <li>
+                <Link href="/about">
+                  <p>About Us</p>
+                </Link>
+              </li>
+              <li>
+                <Link href="/services">
+                  <p>Services</p>
+                </Link>
+              </li>
+              <li>
+                <Link href="/contacts">
+                  <p>Contacts</p>
+                </Link>
+              </li>
+            </ul>
       </div>
     </header>
   );

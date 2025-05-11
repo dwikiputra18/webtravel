@@ -1,4 +1,5 @@
 import Header from "./components/header";
+import Footer from "./components/footer"
 
 export default function HomePage() {
   const paketWisata = [
@@ -73,9 +74,7 @@ export default function HomePage() {
       </section>
 
       {/* Footer */}
-      <footer className="text-center text-gray-500 text-sm border-t pt-6">
-        © 2025 TravelNesia. All rights reserved.
-      </footer>
+      <Footer />
     </main>
   );
 }
